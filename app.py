@@ -484,10 +484,140 @@
 
 #LISTS
 
+# names = ['John','Bob','Mosh','Sarah','Marry']
+# print(names)
+# print(names[0])
+# print(names[2])
+# print(names[-1])
+# print(names[-2])
+#
+# print(names[2:])#select range of items
+# print(names[2:4])
+#
+# #original list
+# print(names)
+#
+# names[0] = 'Jon'
+# print(names)
+
+
+
+#--------------------------------------------------------------------------------#
+
+#PGRM: largest number in list (1:59:43)
+
+
+# numbers = [50, 30, 55]
+# largest = numbers[0]
+
+#me
+
+# if numbers[0] > numbers[1] and numbers[0] > numbers[2]:
+#     largest = numbers[0]
+# elif numbers[1] > numbers[2] and numbers[1] > numbers[0]:
+#     largest = numbers[1]
+# else:
+#     largest = numbers[2]
+# print(largest)
+
+#mosh
+
+# numbers = [50, 30, 55, 70]
+# largest = numbers[0]
+#
+# for number in numbers:
+#     if number > largest:
+#         largest = number
+# print(largest)
+
+
+
+#--------------------------------------------------------------------------------#
+
+
+#2D - List (used in data science extensively)
+
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# matrix[0][1]
+# print(matrix[0][1]);
+#
+# print()
+# #nested loops
+#
+# for row in matrix:
+#     for item in row:
+#         print(item)
 
 
 
 
 
+#--------------------------------------------------------------------------------#
 
 
+#LIST METHODS
+
+# numbers = [5, 2, 1, 7, 4, 5, 5]
+# numbers.append(20)
+# print(numbers)
+#
+# #---insert() - to insert item anywhere in list
+#
+# numbers.insert(0, 10)
+# print(numbers)
+#
+# numbers.remove(5)
+# print(numbers)
+#
+# #--- Clear the list
+# # numbers.clear()
+# print(numbers)
+#
+# #--- pop()- to remove last item in a list
+# numbers.pop()
+# print(numbers)
+#
+#
+# #--- index() - to check for existance of an item
+#
+# print(numbers.index(7))
+# #print(numbers.index(5)) #--- This will give an error
+#
+#
+# #--- in() - to check for existance of an item
+# print(50 in numbers) #---o/p: Error
+#
+# #--- count()- count number of occurance
+# print(numbers.count(5))
+#
+# #--- sort() - to sort
+# print(numbers.sort()) #--- o/p: none (Return value is none)
+# numbers.sort()
+# print(numbers) #---prints sorted lists
+#
+# numbers.reverse() #--- descending order
+# print(numbers)
+#
+# #---copy()
+# print()
+# numbers2 = numbers.copy();
+# numbers.append(20);
+# print(numbers)
+# print(numbers2)
+
+
+
+#PGRM: remove duplicates in a list
+
+numbers = [10, 20, 30, 5, 5, 5]
+uniques = []
+
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
