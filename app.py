@@ -614,10 +614,248 @@
 
 #PGRM: remove duplicates in a list
 
-numbers = [10, 20, 30, 5, 5, 5]
-uniques = []
+# numbers = [10, 20, 30, 5, 5, 5]
+# uniques = []
+#
+# for number in numbers:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)
 
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)
+
+
+#--------------------------------------------------------------------------------#
+
+
+#TUPLES
+
+#tuples are similar to list butthey are immutable.
+
+#
+# numbers = [1, 2, 3]
+# number2 = (1,2,3) #Tuples
+#
+# number2[0] = 15 #Error
+# print(number2[0])
+
+
+
+
+
+#--------------------------------------------------------------------------------#
+
+
+#UNPACKNG
+
+# coordinates = (1 ,2, 3)
+# # x = coordinates[0]
+# # y = coordinates[1]
+# # z = coordinates[2]
+# #
+# # above and below code similar
+#
+# x, y, z = coordinates
+#
+# print(x)
+# print(y)
+# print(z)
+#
+# print()
+# coordinates2 = [1, 2, 6]
+# x, y, z = coordinates2
+# print(z)
+
+
+
+#--------------------------------------------------------------------------------#
+
+
+#DICTIONARIES
+
+#   (KEY VALUE PAIR)
+# Name: Ameen
+# Email: ammen@123
+# Ph: 234
+
+# customer = {
+#     "name": "John Smith",
+#     "age": 30,
+#     "is_verified": True
+# }
+#
+# print(customer["name"])
+#
+# #print(customer["birthDate"]) #error
+# print(customer.get("birthDate")) # 'get()' will return none if key is not present
+#
+#
+# #Optional Default value if key does not have a default value
+#
+# print(customer.get("birthDate","Jan 1 1980"))
+#
+# customer["name"] = "Jack Smith"
+# customer["birthdate"] = "Jan 1 1980"
+# print(customer["name"])
+# print(customer["birthdate"])
+
+
+#EXCERSICE (2:23:49)
+
+#Phone: 123
+#o/p: One Two Three
+
+# phone = input("Phone: ")
+# digits_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four"
+# }
+# output = ""
+# for ch in phone:
+#     output += digits_mapping.get(ch, "!") + " "
+# print(output)
+
+
+
+
+#--------------------------------------------------------------------------------#
+
+#EMOJI CONVERTER
+
+
+# message = input(">")
+# words = message.split(' ') #splits the string when it finds a space
+# #Ex: Good morning :)
+#
+# emojis = {
+#     ":)": "\U0001F600",
+#     ":D": "\U0001F603"
+# }
+#
+# output = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "
+# print(output)
+
+
+#--------------------------------------------------------------------------------#
+
+#FUNCTIONS
+
+# def greet_user():
+#     print('Hi there')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# greet_user()
+# print("Finish")
+
+#--------------------------------------------------------------------------------#
+#PARAMETERS
+
+# def greet_user(first_name, last_name): #---> Parameter
+#     print(f'Hi there {first_name} {last_name}!')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# greet_user("John","Smith") #---> Argument (POSITIONAL ARGUMENT)
+# print("Finish")
+
+
+#--------------------------------------------------------------------------------#
+
+#KEYWORD ARGUMENTS
+
+# def greet_user(first_name, last_name): #---> Parameter
+#     print(f'Hi there {first_name} {last_name}!')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# #greet_user("John","Smith") #---> Argument (POSITIONAL ARGUMENT)
+# greet_user(last_name="Smith",first_name="John") #---> Argument (KEYWORD ARGUMENT)
+# print("Finish")
+
+
+#[NOTE: For the most part use positional arguments.
+#       But if you are dealing with functions with neumarical arguments use
+#       keyword argument to increase the readabilty of the code.
+
+
+#NOTE: KEYWORD Argument sholud come after POSITIONAL Arguments
+
+
+
+
+#--------------------------------------------------------------------------------#
+
+#RETURN STATEMENTS
+
+
+# def square(number):
+#     return number * number
+#     #print( number * number)
+#
+#
+# print(square(3))
+#BY DEFAULT EVERY FUNCTION IN PTYTHON RETURNS "None"
+
+
+
+#--------------------------------------------------------------------------------#
+
+#CREATING A REUSABLE FUNCTION
+
+
+# def emoji_converter(message):
+#     words = message.split(' ')
+#     emojis = {
+#         ":)": "\U0001F600",
+#         ":D": "\U0001F603"
+#     }
+#
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#     return output
+#
+#
+# message = input(">")
+# print(emoji_converter(message))
+
+
+#--------------------------------------------------------------------------------#
+
+#EXCEPTION
+
+
+#Error: (after Running the py)
+#exit code: 0 -> means success
+#exit code: other than 0 -> program crashed
+
+#TO HANDLE ERRORS: try except
+
+
+# try:
+#     age = int(input('Age: '))
+#     income = 20000
+#     risk = income / age
+#     print(age)
+# except ZeroDivisionError:
+#     print('Age cannot be zero.')
+# except ValueError:
+#     print('Invalid value')
+
+
+#--------------------------------------------------------------------------------#
+
+#COMMENTS
+
+#dsfdfdf
+
+#print sky is blue (worng, REpetetive , unnecessary comment)
+print("SKy is blue")
+
