@@ -857,5 +857,85 @@
 #dsfdfdf
 
 #print sky is blue (worng, REpetetive , unnecessary comment)
-print("SKy is blue")
+# print("SKy is blue")
 
+
+
+#--------------------------------------------------------------------------------#
+
+
+#CLASSES
+
+#Note: for class name use(Pascal) naming convention, from Pascal langauge.
+#ex: EmailClient, Point
+
+#We use classes to define new types. These types can have methods() in body of the class
+#and attributes that we can set anywhere in the program.
+
+
+# class Point:
+#     def move(self):
+#         print("move")
+#
+#     def draw(self):
+#         print("draw")
+#
+# point1 = Point()
+# point1.x = 10
+# point1.y = 20
+# print(point1.x)
+# point1.draw()
+#
+# point2 = Point()
+# #print(point2.x) #Error
+# point2.x = 30
+# print(point2.x)
+
+
+
+#--------------------------------------------------------------------------------#
+
+
+#CONSTRUCTOR
+
+# class Point:
+#     #CONSTRUCTOR
+#     def __init__(self, x, y):#this method gets called when we create a new point object
+#         self.x = x #Self is reference to current object
+#         self.y = y
+#     def move(self):
+#         print("move")
+#
+#     def draw(self):
+#         print("draw")
+#
+# point = Point(10, 20)
+# print(point.x) #o/p: 10
+#
+# point.x = 11
+# print(point.x) #o/p:11
+
+
+#--------------------------------------------------------------------------------#
+
+
+#Excercise (3:11:39)
+
+# Person
+#  -name
+#  -talk()
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    def talk(self):
+        print(f"Hi, I am {self.name}")
+
+
+p1 = Person('Ameen')
+#print(p1.name)
+p1.talk()
+
+bob = Person("Bobby")
+bob.talk()
